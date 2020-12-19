@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--禁止用户双指放大-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cn.bing.com/sa/simg/favicon-2x.ico" rel="shortcut icon">
+  <title>站点聚焦</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="globalHeader">
+    <form class="searchForm" method="GET" action="https://cn.bing.com/search?" target="_black">
+      <input type="text" name="q">
+      <button type="submit">搜 索</button><!--默认有按回车搜索功能-->
+    </form>
+  </header>
+  <main class="siteMain globalMain">
+    <ul class="siteList">
+      <!-- <li>
+        <a href="https://www.bilibili.com/" target="_black">
+          <div class="site">
+            <div class="logo">
+              <div class="logo">B</div>
+            </div>
+            <div class="link">bilibili</div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/" target="_black">
+          <div class="site">
+            <div class="logo">Y</div>
+            <div class="link">YouTube</div>
+          </div>
+        </a>
+      </li> -->
+      <li class="last addButton-li">
+        <div class="addButton">
+          <div class="iconWrapper">
+            <svg class="icon">
+              <use xlink:href="#icon-add"></use>
+            </svg>
+          </div>
+          <div class="text">新增网站</div>
+        </div>
+      </li>
+    </ul>
+  </main>
+
+  <script src="https://at.alicdn.com/t/font_2265573_wj9slbas2u.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

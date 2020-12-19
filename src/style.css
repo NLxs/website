@@ -1,0 +1,200 @@
+/* css reset */
+* {
+  box-sizing: border-box;
+}
+*:before, *.after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul, ol {
+  list-style: none;
+}
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* style */
+body {
+  background: #eee;
+  background: url("http://mycdn.gzxinbibo.com/nav-1-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+} 
+
+.globalHeader {
+  margin: 20px;
+}
+
+@media (min-width: 500px) {
+  .globalHeader {
+    margin: 60px 0 100px; /*上 60px 左右为0 下100px*/
+  }
+}
+
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+  .searchForm {
+    max-width: 400px;
+    /*margin: 0 auto;*/ /*0 会覆盖其他内容*/
+    margin-left: auto; /*最大宽度或者宽度确定是才可以使用 居中*/
+    margin-right: auto; /* 居中*/
+  }
+}
+
+.searchForm > input {
+  width: 100%;
+  margin-right: 10px;
+  height: 40px;
+  padding: 0 10px; /*上下为0 左右为10*/
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.searchForm > button {
+  white-space: nowrap; /*内部文字不换行*/
+  padding: 0 28px;
+  border: none;
+  border-radius: 4px;
+  background: #0282B9;
+  color: white;
+  font-size: 16px;
+}
+
+.siteMain > input {
+
+}
+
+.siteMain > button {
+
+}
+
+.globalMain {
+  max-width: 900px;
+  margin-left: auto; /*最大宽度或者宽度确定是才可以使用 居中*/
+  margin-right: auto; /* 居中*/
+}
+
+.siteList {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+  .siteList {
+    margin-left: 0;
+    margin-right: -25px; /*负margin的使用*/
+    justify-content: flex-start;
+  }
+}
+
+.siteList > li {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+  .siteList > li {
+    margin-bottom: 10px;
+    margin-right: 25px;
+  }
+}
+.siteList .site {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 20px 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.siteList .site > .logo {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  text-transform: uppercase;
+}
+
+.siteList .site > .link {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.siteList .site:hover > .close {
+  display: block;
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transform: all 1s;
+}
+
+.siteList .site > .close {
+  display: none;
+}
+
+.siteList .site .close {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  font-size: 16px;
+  padding: 1px;
+  cursor: default;
+  display: none;
+}
+.siteList .addButton {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 21px 0;
+  background: white;
+
+  border-radius: 14px;
+}
+
+.siteList .addButton .icon {
+  width: 56px;
+  height: 56px;
+}
+
+.siteList .addButton .text {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.siteList .addButton .iconWrapper {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
